@@ -1,0 +1,80 @@
+#portfolio {
+  padding: 50px 0;
+  background: #182a3d;
+
+  h4 {
+    color: #fff;
+    font-size: 200%;
+
+    a {
+      cursor: pointer;
+      color: #fff;
+      padding-bottom: 2px;
+      border-bottom: 3px solid #fff;
+      transition: all .2s ease-in;
+      &:hover {
+        color: #0366d6;
+        border-color: #0366d6;
+      }
+    }
+  }
+
+  h2 {
+    color: #fff;
+    font-family: $sans-pro;
+    font-size: 300%;
+    margin-bottom: 5px;
+  }
+  hr {
+    width: 10%;
+    border: 1px solid #fff;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .project {
+    overflow: hidden;
+  }
+
+  p {
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+    font-size: 160%;
+    background: rgba(255,255,255, .80);
+    color: #182a3d;
+    padding: 40px 20px;
+    transition: all .3s ease-in;
+    animation-duration: 2s;
+
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+.project {
+  position: relative;
+  width: 100%;
+  height: 220px;
+}
+
+.dicerace,.birthday,.world-foods,.pristine {
+  h5 {
+    background: #182a3d;
+    margin: 0;
+    padding: 10px;
+    color: #fff;
+    font-family: $oswald;
+    font-size: 210%;
+  }
+}

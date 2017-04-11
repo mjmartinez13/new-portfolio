@@ -1,0 +1,74 @@
+.fullscreen {
+  background: linear-gradient(rgba(0,0,0, .78),rgba(0,0,0, .78)), url('../img/hero-section.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+
+  i {
+    position: absolute;
+    bottom: 0;
+    left: 49%;
+    color: #fff;
+    font-size: 250%;
+    animation: bounce 2s infinite;
+  }
+  h3 {
+    font-size: 120%;
+    text-transform: uppercase;
+    left: 43.5%;
+    color: #fff;
+  }
+}
+
+.valign-wrapper {
+  position: relative;
+  height: 70vh;
+
+  .valign {
+    width: 100%;
+  }
+
+  h1,h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+
+  .welcome {
+    margin-bottom: 50px;
+    font-size: 250%;
+  }
+
+  .text-switch {
+    padding: 20px 0;
+    font-size: 250%;
+  }
+  .name {
+    margin: 0;
+    display: inline;
+    font-size: 500%;
+    padding: 3px 15px;
+    border: 3px solid #fff;
+    margin-bottom: 40px;
+    border-radius: 3px;
+  }
+}
+
+
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}    40% {-webkit-transform: translateY(-30px);}
+    60% {-webkit-transform: translateY(-15px);}
+}
+
+@-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+    40% {-moz-transform: translateY(-30px);}
+    60% {-moz-transform: translateY(-15px);}
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+}

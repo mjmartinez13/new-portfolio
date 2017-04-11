@@ -1,0 +1,68 @@
+$break-medium: 992px;
+$break-small: 600px;
+$break-large: 1200px;
+
+@media screen and (max-width: $break-large) {
+  #about-me {
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: $break-medium) {
+  header {
+
+    a {
+      font-size: 120%;
+    }
+    ul {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+  }
+  .fullscreen {
+    .name {
+      font-size: 400%;
+    }
+    .welcome {
+      font-size: 200%;
+    }
+    .text-switch {
+      font-size: 200%;
+    }
+  }
+  .portfolio {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: $break-small) {
+  header {
+
+    nav {
+      display: none;
+    }
+  }
+  .fullscreen {
+    .name {
+      font-size: 300%;
+    }
+    .welcome {
+      font-size: 100%;
+    }
+    .text-switch {
+      font-size: 100%;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1250px) {
+  .portfolio {
+
+  }
+}

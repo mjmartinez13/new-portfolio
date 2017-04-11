@@ -1,0 +1,28 @@
+header {
+  padding: 60px 0;
+  a {
+    cursor: pointer;
+    color: #fff;
+    padding: 5px 15px 6px;
+    border-radius: 3px;
+    font-size: 140%;
+    margin: 0 1%;
+    transition: border .2s;
+    border: 2px solid transparent;
+    &:hover {
+      border: 2px solid #FFF;
+    }
+  }
+  li {
+    display: inline;
+  }
+  ul {
+    width: 56%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.active {
+  border: 2px solid #fff;
+}
