@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+   $(".button-collapse").sideNav();
+
   $("a").on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();
@@ -12,27 +14,36 @@ $(document).ready(function () {
     }
   });
 
-
-    $('a:nth-child(1)').click(function () {
-      $('li:nth-child(1) a').addClass('active');
-      $('li:nth-child(2) a, li:nth-child(3) a, li:nth-child(4) a').removeClass('active');
-
+  $('.js-about-me-section').waypoint(function (direction) {
+    if (direction == "down") {
+      $('nav').addClass('sticky');
+      $('.brand-logo span').show(500);
+    }else {
+      $('nav').removeClass('sticky');
+      $('.brand-logo span').hide(200);
+    }
   });
 
-  $('li:nth-child(2)').click(function () {
-    $('li:nth-child(2) a').addClass('active');
-    $('li:nth-child(1) a, li:nth-child(3) a, li:nth-child(4) a').removeClass('active');
-  });
-
-  $('li:nth-child(3)').click(function () {
-    $('li:nth-child(3) a').addClass('active');
-    $('li:nth-child(1) a, li:nth-child(2) a, li:nth-child(4) a').removeClass('active');
-  });
-
-  $('li:nth-child(4)').click(function () {
-    $('li:nth-child(4) a').addClass('active');
-    $('li:nth-child(1) a, li:nth-child(2) a, li:nth-child(3) a').removeClass('active');
-  });
+  //   $('a:nth-child(1)').click(function () {
+  //     $('li:nth-child(1) a').addClass('active');
+  //     $('li:nth-child(2) a, li:nth-child(3) a, li:nth-child(4) a').removeClass('active');
+  //
+  // });
+  //
+  // $('li:nth-child(2)').click(function () {
+  //   $('li:nth-child(2) a').addClass('active');
+  //   $('li:nth-child(1) a, li:nth-child(3) a, li:nth-child(4) a').removeClass('active');
+  // });
+  //
+  // $('li:nth-child(3)').click(function () {
+  //   $('li:nth-child(3) a').addClass('active');
+  //   $('li:nth-child(1) a, li:nth-child(2) a, li:nth-child(4) a').removeClass('active');
+  // });
+  //
+  // $('li:nth-child(4)').click(function () {
+  //   $('li:nth-child(4) a').addClass('active');
+  //   $('li:nth-child(1) a, li:nth-child(2) a, li:nth-child(3) a').removeClass('active');
+  // });
 
 
 

@@ -13,17 +13,17 @@ $break-large: 1200px;
 }
 
 @media screen and (max-width: $break-medium) {
-  header {
-
-    a {
-      font-size: 120%;
-    }
-    ul {
-      width: 70%;
-      margin: 0 auto;
-    }
-
-  }
+  // header {
+  //
+  //   a {
+  //     font-size: 120%;
+  //   }
+  //   ul {
+  //     width: 70%;
+  //     margin: 0 auto;
+  //   }
+  //
+  // }
   .fullscreen {
     .name {
       font-size: 400%;
@@ -38,15 +38,21 @@ $break-large: 1200px;
   .portfolio {
     width: 50%;
   }
+  #portfolio {
+    .container {
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
 }
 
 @media screen and (max-width: $break-small) {
-  header {
-
-    nav {
-      display: none;
-    }
-  }
+  // header {
+  //
+  //   nav {
+  //     display: none;
+  //   }
+  // }
   .fullscreen {
     .name {
       font-size: 300%;
@@ -58,11 +64,10 @@ $break-large: 1200px;
       font-size: 100%;
     }
   }
-}
-
-
-@media screen and (max-width: 1250px) {
-  .portfolio {
-
+  #portfolio {
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
   }
 }

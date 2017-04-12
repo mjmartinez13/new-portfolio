@@ -5,7 +5,13 @@
   background-size: cover;
   height: 100vh;
 
-  i {
+  h3 {
+    font-size: 120%;
+    text-transform: uppercase;
+    left: 43.5%;
+    color: #fff;
+  }
+  .slide-down {
     position: absolute;
     bottom: 0;
     left: 49%;
@@ -13,17 +19,11 @@
     font-size: 250%;
     animation: bounce 2s infinite;
   }
-  h3 {
-    font-size: 120%;
-    text-transform: uppercase;
-    left: 43.5%;
-    color: #fff;
-  }
 }
 
 .valign-wrapper {
   position: relative;
-  height: 70vh;
+  height: 80vh;
 
   .valign {
     width: 100%;

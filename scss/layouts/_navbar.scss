@@ -1,28 +1,40 @@
 header {
-  padding: 60px 0;
-  a {
-    cursor: pointer;
-    color: #fff;
-    padding: 5px 15px 6px;
-    border-radius: 3px;
-    font-size: 140%;
-    margin: 0 1%;
-    transition: border .2s;
-    border: 2px solid transparent;
-    &:hover {
-      border: 2px solid #FFF;
+  nav {
+    height: 83px;
+    padding: 8px 0;
+    background: rgba(0,0,0, 0.2) !important;
+    border: none !important;
+    transition: background 0.3s
+  }
+  .brand-logo {
+    vertical-align: middle;
+    img {
+      margin-right: 8px;
+      vertical-align: middle;
     }
-  }
-  li {
-    display: inline;
-  }
-  ul {
-    width: 56%;
-    text-align: center;
-    margin: 0 auto;
+    font: {
+      size: 190%;
+      weight: 200;
+      family: $oswald;
+    }
+    span {
+      vertical-align: middle;
+      display: none;
+    }
   }
 }
 
 .active {
   border: 2px solid #fff;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0d0d0d !important;
+}
+
+.side-nav {
+  z-index: 999 !important;
 }
